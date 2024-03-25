@@ -1,7 +1,7 @@
-import Pages from './pages';
+import Routes from './routes';
 
-export default function Home() {
+export default function Init() {
   return (
-    <Pages />
+    <Routes />
   );
 }
