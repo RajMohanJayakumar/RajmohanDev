@@ -1,0 +1,24 @@
+.container {
+    background-color: azure;
+    height: 100vh;
+    background-color: #516067;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    >h1 {
+        font-family: "Rubik Scribble";
+        font-weight: 600;
+        font-style: normal;
+        font-size: 8rem;
+        color: #fff;
+        margin-bottom:30rem;
+    }
+    
+}
+
+.rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
