@@ -1,13 +1,16 @@
 import React from 'react';
-import styles from './Home.module.scss';
-import PortfolioLinkGroup from '../../_components_/molecules/PortfolioLinkGroup';
-import { portfolioData } from './home.constants';
+import Overview from './_slides_/Overview';
+import Programming from './_slides_/Programming';
+import Games from './_slides_/Games';
+import Gallery from './_slides_/Gallery';
 
 const Home = () => {
-    return <div className={styles.container}>
-        <h1>Localhost dep</h1>
-        <PortfolioLinkGroup portfolioData={portfolioData} />
-        </div>
+    return <>
+        <Overview />
+        <Programming />
+        <Games />
+        <Gallery />
+    </>
 }
 
 export default Home;
