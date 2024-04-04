@@ -1,0 +1,18 @@
+
+.container {
+    height: 100vh;
+    background-color: #a5c8d4;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    scroll-snap-align: start;
+    >h1 {
+        font-family: "Rubik Scribble";
+        font-weight: 600;
+        font-style: normal;
+        font-size: 8rem;
+        color: #fff;
+        margin-bottom:30rem;
+    }
+    
+}
