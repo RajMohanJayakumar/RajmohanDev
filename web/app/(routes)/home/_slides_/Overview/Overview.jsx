@@ -1,13 +1,11 @@
 import React from 'react';
-import styles from '../../Home.module.scss';
-import PortfolioLinkGroup from '../../../../_components_/molecules/PortfolioLinkGroup';
-import { portfolioData } from '../../Home.constants';
+import slidesStyles from '../_slides_.module.scss';
+import { BACKGROUND_COLOR } from '../_slides_.contants';
 
-const Home = () => {
-    return <div className={styles.container}>
-        <h1>Raj Mohan Dev</h1>
-        <PortfolioLinkGroup portfolioData={portfolioData} />
-        </div>
+const Overview = () => {
+    return <section className={slidesStyles.container} style={{ backgroundColor: BACKGROUND_COLOR.WHITE }}>
+        <h1>.</h1>
+        </section>
 }
 
-export default Home;
+export default Overview;

@@ -1,11 +1,11 @@
 
-// Move this to common styles
 .container {
     height: 100vh;
     background-color: #a5c8d4;
     justify-content: center;
     align-items: center;
     display:flex;
+    scroll-snap-align: start;
     >h1 {
         font-family: "Rubik Scribble";
         font-weight: 600;
@@ -15,4 +15,4 @@
         margin-bottom:30rem;
     }
     
-} 
+}

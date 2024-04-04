@@ -1,12 +1,13 @@
 import React from 'react';
-import styles from './Gallery.module.scss';
+import slidesStyles from '../_slides_.module.scss';
+import { BACKGROUND_COLOR } from '../_slides_.contants';
 
-const Programming = () => {
+const Gallery = () => {
     return (
-        <div className={styles.container}>
-            <h1>Programming</h1>
-        </div>
+        <section className={slidesStyles.container} style={{ backgroundColor: BACKGROUND_COLOR.GALLERY }}>
+            <h1>Gallery</h1>
+        </section>
     )
 }
 
-export default Programming;
+export default Gallery;

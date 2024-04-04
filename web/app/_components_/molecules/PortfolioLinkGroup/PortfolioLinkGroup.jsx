@@ -1,14 +1,34 @@
 import React from 'react';
-import PortfolioLink from '../../atoms/PortfolioLink';
+import { FloatButton } from 'antd'
+import FloatButtonGroup from 'antd/lib/float-button/FloatButtonGroup'
 import { EMPTY_ARRAY } from '../../../_commons_/constants';
+import { PORTFOLIO } from './PortfolioLinkGroup.constants';
 
-const PortfolioLinkGroup = (props) => {
-    const { portfolioData = EMPTY_ARRAY } = props;
+const getFloatButton = ({ link, iconUrl, tooltip }) => <>
+    <FloatButton
+            href={link}
+            tooltip={tooltip}
+            target="_blank"
+            icon={<img src={iconUrl} alt="L" style={{ height: '2rem' }} />}
+        />
+</>;
 
+const PortfolioLinkGroup = () => {
     return (
-        <div className='portfolio-link-group'>
-            {portfolioData.map(({ link, icon, name }) => <PortfolioLink link={link} icon={icon} name={name} />)}
-        </div>
+       <>
+       <FloatButtonGroup style={{ right: 24 + 70 + 70  }}>
+            {getFloatButton(PORTFOLIO.LINKEDIN)}
+        </FloatButtonGroup>
+        <FloatButtonGroup style={{ right: 24 + 70 }}>
+            {getFloatButton(PORTFOLIO.GITHUB)}
+            {getFloatButton(PORTFOLIO.MEDIUM)}
+        </FloatButtonGroup>
+        <FloatButtonGroup style={{ right: 24 }}>
+            {getFloatButton(PORTFOLIO.STACKOVERFLOW)}
+            {getFloatButton(PORTFOLIO.INSTAGRAM)}
+            {getFloatButton(PORTFOLIO.FACEBOOK)}
+        </FloatButtonGroup>
+       </>
     )
 }
 

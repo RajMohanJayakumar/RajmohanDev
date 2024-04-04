@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './Games.module.scss';
+import slidesStyles from '../_slides_.module.scss';
+import { BACKGROUND_COLOR } from '../_slides_.contants';
 
 const Games = () => {
     return (
-        <div className={styles.container}>
+        <section className={slidesStyles.container} style={{ backgroundColor: BACKGROUND_COLOR.GAMES }}>
             <h1>Games</h1>
-        </div>
+        </section>
     )
 }
 

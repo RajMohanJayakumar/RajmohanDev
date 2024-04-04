@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './Programming.module.scss';
+import slidesStyles from '../_slides_.module.scss';
+import { BACKGROUND_COLOR } from '../_slides_.contants';
 
 const Programming = () => {
     return (
-        <div className={styles.container}>
+        <section id="programming" className={slidesStyles.container} style={{ backgroundColor: BACKGROUND_COLOR.PROGRAMMING }}>
             <h1>Programming</h1>
-        </div>
+        </section>
     )
 }
 
